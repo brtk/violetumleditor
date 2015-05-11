@@ -83,6 +83,12 @@ public class SequenceDiagramGraph extends AbstractGraph
         noteNode.setToolTip(rs.getString("node2.tooltip"));
         NODE_PROTOTYPES.add(noteNode);
         
+        FrameNode frameNode = new FrameNode();
+        frameNode.setToolTip(rs.getString("node3.tooltip"));
+        NODE_PROTOTYPES.add(frameNode);
+        
+        System.out.println(">>>> LOL");
+        
         CallEdge callEdge = new CallEdge();
         callEdge.setToolTip(rs.getString("edge0.tooltip"));
         EDGE_PROTOTYPES.add(callEdge);

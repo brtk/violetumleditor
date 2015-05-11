@@ -45,6 +45,11 @@ public class MultiLineString implements Serializable, Cloneable {
 		size = NORMAL;
 		underlined = false;
 	}
+	
+	public MultiLineString(String text) {
+		this();
+		this.text=text;
+	}
 
 	/**
 	 * Sets the value of the text property.
